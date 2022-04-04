@@ -20,6 +20,8 @@
       <div id="wrapper">
 
         <!-- Header -->
+          {% block content %}
+          {% endblock%}
           <header id="header">
             <div class="logo">
               <span class="icon fa-gem"></span>
@@ -53,17 +55,17 @@
 
             <!-- Intro -->
               <article id="intro">
-                <h2 class="major">Intro</h2>
-                <span class="image main"><img src="../static/images/bici_montala.jpg" alt="" /></span>
-                <p>En HomingBike queremos que disfrutes del mejor servicio sin tener que moverte de casa o desplazarte con el vehículo hasta la tienda más cercana.</p>
+                <h2 class="major">Una introducción</h2>
+                <span class="image main"><img src="../static/images/tienda/equipoNiños.jpg" alt="" /></span>
+                <p>En Bicicletas a Domiilio, queremos que disfrutes del mejor servicio sin tener que moverte de casa o desplazarte con el vehículo hasta la tienda más cercana.</p>
                 <p>El resultado de nuestra experiencia llevado a cualquier parte: Es lo que más nos identifica.</p>
                 <p>Sólo tiene que llamarnos, decidnos dónde ir y cuál es el problema.</p>
               </article>
 
             <!-- Work -->
               <article id="work">
-                <h2 class="major">Work</h2>
-                <span class="image main"><img src="../static/images/bici_electrica.jpeg" alt="" /></span>
+                <h2 class="major">Nuestro trabajo</h2>
+                <span class="image main"><img src="../static/images/tienda/adomicilio.jpg" alt="" /></span>
                 <p>Trabajamos a domicilio en Madrid y alrededores, ud nos llama y nosotros acudiremos al lugar dónde tengamos que resolver la avería.</p>
                 <p>
                   <li>Taller de bicicletas en general.</li>
@@ -76,14 +78,24 @@
 
             <!-- About -->
               <article id="about">
-                <h2 class="major">About</h2>
-                <span class="image main"><img src="../static/images/bike.jpg" alt="" /></span>
-                <p>Somos una empresa Madrileña con ganas de ayudar. Nuestros trabajadores tienen años de experiencia en el sector y han trabajado para diferentes tiendas y talleres.</p>
+                <h2 class="major">Sobre nosotros</h2>
+                <span class="image main"><img src="../static/images/tienda/dosRuedas.jpg" alt="" /></span>
+                <p>Somos una empresa Madrileña con ganas de ayudar. Contamos con un equipo que aporta su experiencia de años en talleres, para brindar su trabajo directamente a su casa.</p>
+                <div class="galería" style="display: flex; justify-content: center; flex-wrap: wrap;">
+                  <span class="image left"><img src="../static/images/tienda/piezas.jpg" alt="" /></span>
+                  <span class="image right"><img src="../static/images/tienda/biciMontaña.jpg" alt="" /></span>
+                  <span class="image left"><img src="../static/images/tienda/arreglo.jpg" alt="" /></span>
+                  <span class="image right"><img src="../static/images/tienda/equipoNiños.jpg" alt="" /></span>
+                  <span class="image left"><img src="../static/images/tienda/coso.jpg" alt="" /></span>
+                </div>
+                <div style="display: flex; justify-content: center">
+                <button><a href="/galeria" target="_blank">Mira nuestra galería</a></button>
+                </div>
               </article>
 
             <!-- Contact -->
               <article id="contact">
-                <h2 class="major">Contact</h2>
+                <h2 class="major">Contacto</h2>
                 <h4>Teléfono: <span>663 56 46 53</span></h4>
                 <h4>Otro contacto: 654 34 89 58</h4>
                 <!--
@@ -378,14 +390,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
       <script src="../static/assets/js/main.js"></script>
 
   </body>
-{% block content %}
-{% endblock %}
 <footer>    
-  {% block footer %}
-
-
-
-  {% endblock %}
 </footer>
 
 </html>

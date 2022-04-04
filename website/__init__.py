@@ -5,6 +5,9 @@ def create_app():
 
 	@app.route("/")
 	def inicio():
-		return render_template("inicio.html")	
+		return render_template("base.html")
+	@app.route("/galeria")
+	def galeria():
+		return render_template("galeria.html")	
 
 	return app
